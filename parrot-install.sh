@@ -56,7 +56,7 @@ function core_install() {
 	apt-get update
 	apt-get -y full-upgrade
 	apt-get -y install gnupg
-	wget https://raw.githubusercontent.com/3isenHeiM/alternate-install/parrot.list -O /etc/apt/sources.list.d/parrot.list
+	wget https://raw.githubusercontent.com/3isenHeiM/alternate-install/master/parrot.list -O /etc/apt/sources.list.d/parrot.list
 	echo -e "# The parrot repo is located at /etc/apt/sources.list.d/parrot.list" > /etc/apt/sources.list
 	wget -qO - https://deb.parrotsec.org/parrot/misc/parrotsec.gpg | apt-key add -
 	apt-get update
